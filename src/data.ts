@@ -71,7 +71,7 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
     ]
   },
   BIOLOGY: {
-    title: 'Bawlawzi le Thil Nung lei Hngalhnak (Biology)',
+    title: 'Biology le Thil Nung lei Hngalhnak (Biology)',
     icon: React.createElement(Microscope, { className: "w-8 h-8 text-green-600" }),
     entries: [
       { title: 'Thingkung (Plants)', description: 'Thingkung hi vawleicung thil nung vialte caah a biapi bikmi an si. Anmah nih thli thiang (oxygen) a kan pek i, kan vawlei a lum tuknak in a kan humhim. Thingkung nih niceu hman in anmah caah rawl an i tuah khawh.' },
@@ -86,14 +86,14 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
       { title: 'Thla (Moon)', description: 'Thla hi vawlei i a satellite a si i, zan ah a ceu tawn. Rili ti a sannak le a tthiamnak (tides) zong thla nih hin a hruai i, vawlei a mer (rotation) zong a tlamtlinter.' },
       { title: 'Arfi (Stars)', description: 'Arfi hna hi van ah a ceumi thil lianpipi an si i, kan ni (sun) zong hi arfi pakhat a si ve. Arfi hna hi gas lianpipi in tuahmi an si i, hlatpi ah an um caah an hme tein kan hmuh hna.' },
       { title: 'Mei (Fire)', description: 'Mei nih lumnak le rawl chuannak a kan pek. Mei hi kan hman thiam ahcun a ttha tuk i, kan hman thiam lo ahcun thil tampi a hrawk khawh. Mei chuah nakhnga oxygen, lumnak le eimi thil (fuel) an herh.' },
-      { title: 'Seal (Cells)', description: 'Seal hi thil nung vialte i a hmete bikmi hmun (building blocks) an si. Kan taksa pumpi hi seal thong tampi in tuahmi a si i, anmah chungah nunnak hram a um.' },
+      { title: 'Cells', description: 'Cells hi thil nung vialte i a hmete bikmi hmun (building blocks) an si. Kan taksa pumpi hi cells thong tampi in tuahmi a si i, anmah chungah nunnak hram a um.' },
       { title: 'DNA', description: 'DNA nih kan sining le kan hmelchunhnak (traits) vialte kha a ken. Nu le pa sinin kan hmuhmi sining (entatnak: mit mui, sam mui) vialte hi DNA chungah an um.' },
-      { title: 'Thliei (Photosynthesis)', description: 'Thingkung nih niceu, ti le thli (carbon dioxide) hman in anmah caah rawl an i tuahnak hi a si. Hi rian nih hin thil nung caah a herhmi oxygen a chuahter.' },
-      { title: 'Sahnawidawt (Mammals)', description: 'Sahnawidawt cu an fale hnawi a dawtmi saram an si i, an fale kha an pawi hna i an hrin hna. Minung, vui le rili chung nga lian (whale) hna hi sahnawidawt kan si.' },
-      { title: 'Tangvawvial (Reptiles)', description: 'Tangvawvial cu vawlei ah a vawmi le a nungmi saram an si i, an vun a feh i tihnah (scales) an ngei tawn. Entatnak ah: rul, laiking le tlangvaw hna hi an si.' },
-      { title: 'Rungrul (Insects)', description: 'Rungrul cu ke 6 a ngeimi saram hmete an si i, an taksa hi hmun thum (lu, awm, tta) ah tthenmi a si. Vawleicung ah rungrul hi an tam bik i nungphung caah an biapi tuk.' },
-      { title: 'Baktiria (Bacteria)', description: 'Baktiria cu mit in hmuh khawh lomi thil nung hmete (single-celled) an si. A cheu cu zawtnak chuahtertu an si i, a cheu cu taksa caah a tthami (entatnak: rawl hrawhpiaknak ah) an si.' },
-      { title: 'Vairat (Virus)', description: 'Vairat cu zawtnak a chuahtertu thil nung hmete an si i, thil nung dang (host) chungah lawng an nung kho. Vairat hi baktiria nakin an hme deuh i thlop fawi an si lo.' },
+      { title: 'Photosynthesis', description: 'Thingkung nih niceu, ti le thli (carbon dioxide) hman in anmah caah rawl an i tuahnak hi a si. Hi rian nih hin thil nung caah a herhmi oxygen a chuahter.' },
+      { title: 'Mammals', description: 'Mammals cu an fale hnawi a dawtmi saram an si i, an fale kha an pawi hna i an hrin hna. Minung, vui le rili chung nga lian (whale) hna hi mammals kan si.' },
+      { title: 'Reptiles', description: 'Reptiles cu vawlei ah a vawmi le a nungmi saram an si i, an vun a feh i tihnah (scales) an ngei tawn. Entatnak ah: rul, laiking le tlangvaw hna hi an si.' },
+      { title: 'Insects', description: 'Insects cu ke 6 a ngeimi saram hmete an si i, an taksa hi hmun thum (lu, awm, tta) ah tthenmi a si. Vawleicung ah insects hi an tam bik i nungphung caah an biapi tuk.' },
+      { title: 'Bacteria', description: 'Bacteria cu mit in hmuh khawh lomi thil nung hmete (single-celled) an si. A cheu cu zawtnak chuahtertu an si i, a cheu cu taksa caah a tthami (entatnak: rawl hrawhpiaknak ah) an si.' },
+      { title: 'Virus', description: 'Virus cu zawtnak a chuahtertu thil nung hmete an si i, thil nung dang (host) chungah lawng an nung kho. Virus hi bacteria nakin an hme deuh i thlop fawi an si lo.' },
       { title: 'Fang (Seeds)', description: 'Fang hi thingkung thar a chuah khawnak dingah a biapi bikmi a si. Fang chungah thingkung thar caah a herhmi thawnnak le sining vialte an i thup tawn.' },
       { title: 'Hram (Roots)', description: 'Hram nih thingkung kha vawlei ah a fehter i, vawlei chung i a ummi ti le thawnnak kha a dawp tawn. Hram a thuk deuh poh ah thingkung a feh deuh.' },
       { title: 'Hnah (Leaves)', description: 'Thingkung hnah nih niceu in rawl an tuah tawn (photosynthesis). Hnah hring (chlorophyll) nih thli thiang (oxygen) a chuahter i vawlei thli a thiangter.' },
@@ -113,51 +113,51 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
     ],
     questions: [
       { question: 'Thingkung nih zeidah a kan pek?', options: ['Mei', 'Thli thiang (Oxygen)', 'Ti thlum'], answer: 1 },
-      { question: 'Vawleicung ah a tam bikmi saram cu zeidah an si?', options: ['Nga', 'Vate', 'Rungrul (Insects)'], answer: 2 },
-      { question: 'Thil nung vialte i a hmete bikmi hmun cu zeidah a si?', options: ['Seal (Cells)', 'Ruh', 'Vun'], answer: 0 },
-      { question: 'Ti chung le vawlei cung pahnih ah a nung khawhmi cu zeidah an si?', options: ['Nga', 'Ti-saram (Amphibians)', 'Vate'], answer: 1 },
-      { question: 'Kan eimi rawl thawnnak ah a thlentu rian cu zeidah a si?', options: ['Rawl-hrawhnak (Digestion)', 'I-hngilhnak', 'Lam-tlinnak'], answer: 0 },
+      { question: 'Vawleicung ah a tam bikmi saram cu zeidah an si?', options: ['Nga', 'Vate', 'Insects'], answer: 2 },
+      { question: 'Thil nung vialte i a hmete bikmi hmun cu zeidah a si?', options: ['Cells', 'Ruh', 'Vun'], answer: 0 },
+      { question: 'Ti chung le vawlei cung pahnih ah a nung khawhmi cu zeidah an si?', options: ['Nga', 'Amphibians', 'Vate'], answer: 1 },
+      { question: 'Kan eimi rawl thawnnak ah a thlentu rian cu zeidah a si?', options: ['Digestion', 'I-hngilhnak', 'Lam-tlinnak'], answer: 0 },
       { question: 'Thingkung hnah nih rawl an tuahnak dingah zeidah an hman?', options: ['Niceu (Sunlight)', 'Mei', 'Zanlei thli'], answer: 0 }
     ]
   },
   COMPUTER: {
-    title: 'Kumpuita le Teknawlawzi (Computer & Technology)',
+    title: 'Computer le Technology (Computer & Technology)',
     icon: React.createElement(Monitor, { className: "w-8 h-8 text-blue-600" }),
     entries: [
-      { title: 'Kumpuita (Computer)', description: 'Kumpuita (Computer) cu rian a ttuan rannak le thil hngalhnak (data) chiahnak dingah tuahmi seh a si. Kumpuita nih hin hadwea (taksa) le sofwea (program) hman in rian a ttuan tawn. Tuchan ahcun kumpuita lo in rianttuannak a har tuk cang.' },
-      { title: 'Intanet (Internet)', description: 'Intanet (Internet) nih vawleipia mi vialte a kan pehtlaihter i, thil hngalhnak vialte kha fawi tein kan hmuh khawnak lam a si. Intanet cu vawleicung kumpuita vialte pehtlaihnak hri (network) lianpi a si.' },
-      { title: 'Mawpaimit (Mobile Phone)', description: 'Mawpaimit (Mobile Phone) cu kut chung kumpuita hmete a si i, bia i chawnnak lawng si lo in thil tampi tuahnak ah kan hman khawh. Phone chungah hin kumpuita i a ummi thiamnak vialte fawi tein hman khawh an si.' },
-      { title: 'Mauzi (Mouse)', description: 'Mauzi (Mouse) cu kumpuita iskrin cungah thil kan hmeh khawnak le kan hruai khawnak dingah hmanmi a si. Mauzi nih kumpuita hman fawinak a kan pek i, thil kan kawl tikah a ranter.' },
-      { title: 'Kibaw (Keyboard)', description: 'Kibaw (Keyboard) cu kumpuita chungah ca kan tial khawnak le nawl kan pekh khawnak dingah hmanmi seh a si. Kibaw cungah a ummi nambat le biafang hna nih kumpuita he pehtlaihnak a kan tuahter.' },
-      { title: 'Iskrin (Screen/Monitor)', description: 'Iskrin (Screen/Monitor) nih kumpuita chung i a ummi hmanthlak, ca le video vialte kha a kan hmuhter tawn. Iskrin tthat deuh poh ah hmanthlak a fiang deuh i mit caah a ttha deuh.' },
-      { title: 'Sofwea (Software)', description: 'Sofwea (Software) cu kumpuita chungah rian pakhat ttuannak dingah tuahmi program hna an si. Entatnak ah: Facebook, YouTube le kumpuita tlam (apps) vialte hna hi an si.' },
-      { title: 'Hadwea (Hardware)', description: 'Hadwea (Hardware) cu kumpuita taksa, kan hmuh khawhmi le kan tawngh khawhmi thil vialte hna an si. Entatnak ah: iskrin, kibaw le kumpuita chung i a ummi thil hna hi an si.' },
-      { title: 'Imeal (Email)', description: 'Imeal (Email) cu kumpuita asiloah phone in ca kan i kuatnak a si i, cacahnah in kuatnak nakin a ran deuh i a fawi deuh. Imeal cu rianttuannak le pehtlaihnak ah a biapi tukmi a si.' },
-      { title: 'Paswat (Password)', description: 'Paswat (Password) cu kan thil vialte thup tein kan chiah khawnak dingah hmanmi biathli (secret code) a si. Paswat feh deuh poh ah kan thil (data) an him deuh i, midang hngalhter lo a ttha.' },
-      { title: 'Data (Data)', description: 'Data (Data) cu kumpuita chungah kan chiahmi thil hngalhnak, hmanthlak le ca vialte hna hi an si. Data hi kumpuita thawnnak a si i, ttha tein humhim a herh.' },
-      { title: 'Wi-Fi (Wireless Fidelity)', description: 'Wi-Fi (Wireless Fidelity) nih hri (wire) um lo tein intanet a kan pehtlaihter i, fawi tein intanet hman khawnak a kan pek. Wi-Fi thazaang a tthat deuh poh ah intanet a rang deuh.' },
-      { title: 'Laptawp (Laptop)', description: 'Laptawp (Laptop) cu ken khawhmi kumpuita a si i, hmun kip ah fawi tein kan i ken khawh i rian kan ttuan khawh. Laptawp chungah batri a um caah mei um lo zongah hman khawh a si.' },
-      { title: 'Tablet (Tablet)', description: 'Tablet (Tablet) cu iskrin lawng a ngeimi kumpuita a si i, phone nakin a lian deuh i kumpuita nakin a hme deuh. Tablet hi ca zohnak le hmanthlak tialnak ah a ttha tuk.' },
-      { title: 'App (Application)', description: 'App (Application) cu rian pakhat ttuannak kumpuita tlam a si i, phone chungah thil tuahnak dingah kan hman tawn. Entatnak ah: games, hmanthlak sersiamnak le pehtlaihnak apps hna hi an si.' },
-      { title: 'Websai (Website)', description: 'Websai (Website) cu intanet cungah ca, hmanthlak le video hna chiahnak hmun a si i, vawleicung hmun kip in an zoh khawh. Websai nih thil hngalhnak tampi a kan pek.' },
-      { title: 'Klau (Cloud)', description: 'Klau (Cloud) cu intanet cungah thil chiahnak hmun a si i, kan phone asiloah kumpuita a hrawk zongah kan thil vialte an him zungzal. Hmun kip in kan thil hna kha kan hmu kho tthan.' },
-      { title: 'Fawda (Folder)', description: 'Fawda (Folder) cu kumpuita chungah kan thil (files) hna kha ttha tein tthen i chiahnak bawm a si. Fawda nih kumpuita chung thil hna kha a thianghlimter i kawl a fawiter.' },
-      { title: 'Faial (File)', description: 'Faial (File) cu kumpuita chungah ca pakhat asiloah hmanthlak pakhat kan chiahmi hi a si. Faial phun kip (ca, hla, video) an um tawn.' },
+      { title: 'Computer', description: 'Computer cu rian a ttuan rannak le thil hngalhnak (data) chiahnak dingah tuahmi seh a si. Computer nih hin hardware (taksa) le software (program) hman in rian a ttuan tawn. Tuchan ahcun computer lo in rianttuannak a har tuk cang.' },
+      { title: 'Internet', description: 'Internet nih vawleipia mi vialte a kan pehtlaihter i, thil hngalhnak vialte kha fawi tein kan hmuh khawnak lam a si. Internet cu vawleicung computer vialte pehtlaihnak hri (network) lianpi a si.' },
+      { title: 'Mobile Phone', description: 'Mobile Phone cu kut chung computer hmete a si i, bia i chawnnak lawng si lo in thil tampi tuahnak ah kan hman khawh. Phone chungah hin computer i a ummi thiamnak vialte fawi tein hman khawh an si.' },
+      { title: 'Mouse', description: 'Mouse cu computer screen cungah thil kan hmeh khawnak le kan hruai khawnak dingah hmanmi a si. Mouse nih computer hman fawinak a kan pek i, thil kan kawl tikah a ranter.' },
+      { title: 'Keyboard', description: 'Keyboard cu computer chungah ca kan tial khawnak le nawl kan pekh khawnak dingah hmanmi seh a si. Keyboard cungah a ummi nambat le biafang hna nih computer he pehtlaihnak a kan tuahter.' },
+      { title: 'Screen/Monitor', description: 'Screen/Monitor nih computer chung i a ummi hmanthlak, ca le video vialte kha a kan hmuhter tawn. Screen tthat deuh poh ah hmanthlak a fiang deuh i mit caah a ttha deuh.' },
+      { title: 'Software', description: 'Software cu computer chungah rian pakhat ttuannak dingah tuahmi program hna an si. Entatnak ah: Facebook, YouTube le apps vialte hna hi an si.' },
+      { title: 'Hardware', description: 'Hardware cu computer taksa, kan hmuh khawhmi le kan tawngh khawhmi thil vialte hna an si. Entatnak ah: screen, keyboard le computer chung i a ummi thil hna hi an si.' },
+      { title: 'Email', description: 'Email cu computer asiloah phone in ca kan i kuatnak a si i, cacahnah in kuatnak nakin a ran deuh i a fawi deuh. Email cu rianttuannak le pehtlaihnak ah a biapi tukmi a si.' },
+      { title: 'Password', description: 'Password cu kan thil vialte thup tein kan chiah khawnak dingah hmanmi biathli (secret code) a si. Password feh deuh poh ah kan thil (data) an him deuh i, midang hngalhter lo a ttha.' },
+      { title: 'Data', description: 'Data cu computer chungah kan chiahmi thil hngalhnak, hmanthlak le ca vialte hna hi an si. Data hi computer thawnnak a si i, ttha tein humhim a herh.' },
+      { title: 'Wi-Fi', description: 'Wi-Fi nih hri (wire) um lo tein internet a kan pehtlaihter i, fawi tein internet hman khawnak a kan pek. Wi-Fi thazaang a tthat deuh poh ah internet a rang deuh.' },
+      { title: 'Laptop', description: 'Laptop cu ken khawhmi computer a si i, hmun kip ah fawi tein kan i ken khawh i rian kan ttuan khawh. Laptop chungah batri a um caah mei um lo zongah hman khawh a si.' },
+      { title: 'Tablet', description: 'Tablet cu screen lawng a ngeimi computer a si i, phone nakin a lian deuh i computer nakin a hme deuh. Tablet hi ca zohnak le hmanthlak tialnak ah a ttha tuk.' },
+      { title: 'App', description: 'App cu rian pakhat ttuannak computer program a si i, phone chungah thil tuahnak dingah kan hman tawn. Entatnak ah: games, hmanthlak sersiamnak le pehtlaihnak apps hna hi an si.' },
+      { title: 'Website', description: 'Website cu internet cungah ca, hmanthlak le video hna chiahnak hmun a si i, vawleicung hmun kip in an zoh khawh. Website nih thil hngalhnak tampi a kan pek.' },
+      { title: 'Cloud', description: 'Cloud cu internet cungah thil chiahnak hmun a si i, kan phone asiloah computer a hrawk zongah kan thil vialte an him zungzal. Hmun kip in kan thil hna kha kan hmu kho tthan.' },
+      { title: 'Folder', description: 'Folder cu computer chungah kan thil (files) hna kha ttha tein tthen i chiahnak bawm a si. Folder nih computer chung thil hna kha a thianghlimter i kawl a fawiter.' },
+      { title: 'File', description: 'File cu computer chungah ca pakhat asiloah hmanthlak pakhat kan chiahmi hi a si. File phun kip (ca, hla, video) an um tawn.' },
       { title: 'Hrawh (Delete)', description: 'Hrawh (Delete) cu kumpuita chung i kan herh ti lomi thil hna kha hloternak a si. Thil kan hrawh tikah kumpuita chungah hmun (space) a tam deuh tawn.' },
       { title: 'Kham (Save)', description: 'Kham (Save) cu kan ttuanmi rian hna kha kumpuita chungah ttha tein chiahnak a si i, hnu ah zoh tthan khawh a si. Kham lo ahcun kan ttuanmi vialte an lo khawh.' },
       { title: 'Chuah (Print)', description: 'Chuah (Print) cu kumpuita chung i a ummi ca asiloah hmanthlak kha cacahnah cungah chuahnak a si. Hi caah hin printer seh hman a herh.' }
     ],
     questions: [
-      { question: 'Intanet (Internet) rian biapi bik cu zeidah a si?', options: ['Thil hrawh', 'Vawleipia pehtlaihter', 'Mei chuah'], answer: 1 },
-      { question: 'Kumpuita chungah ca tialnak dingah zeidah kan hman?', options: ['Mauzi', 'Iskrin', 'Kibaw (Keyboard)'], answer: 2 },
-      { question: 'Kan thil vialte him tein chiah-nak biathli cu zeidah a si?', options: ['Paswat (Password)', 'Imeal', 'App'], answer: 0 }
+      { question: 'Internet rian biapi bik cu zeidah a si?', options: ['Thil hrawh', 'Vawleipia pehtlaihter', 'Mei chuah'], answer: 1 },
+      { question: 'Computer chungah ca tialnak dingah zeidah kan hman?', options: ['Mouse', 'Screen', 'Keyboard'], answer: 2 },
+      { question: 'Kan thil vialte him tein chiah-nak biathli cu zeidah a si?', options: ['Password', 'Email', 'App'], answer: 0 }
     ]
   },
   GEOGRAPHY: {
     title: 'Vawleipia le Ram lei Hngalhnak (Geography)',
     icon: React.createElement(Globe, { className: "w-8 h-8 text-cyan-600" }),
     entries: [
-      { title: 'Vawleipia (Earth)', description: 'Vawleipia hi thil nung vialte kan umnak hmun a si i, ni (sun) in zoh ahcun thlaphal pathumnak a si. Vanlawng (space) in zoh ahcun a hring le a hringdu (blue) in a dawh tuk i, nunnak a um khawnak hmun pakhat lawng a si.' },
+      { title: 'Earth', description: 'Earth hi thil nung vialte kan umnak hmun a si i, ni (sun) in zoh ahcun thlaphal pathumnak a si. Vanlawng (space) in zoh ahcun a hring le a hringdu (blue) in a dawh tuk i, nunnak a um khawnak hmun pakhat lawng a si.' },
       { title: 'Ram (Country)', description: 'Ram cu mah le ualnak, upadi le cozah a ngeimi hmun a si. Vawleicung ah ram 200 hrawng an um i, ram pakhat le pakhat an nungphung le an holh an i lo lo.' },
       { title: 'Khua (City)', description: 'Khua cu mi tampi lungrual tein kan umnak hmun a si i, rianttuannak le cawnnak hmun tampi an um tawn. Khua lianpipi hna ahcun mawtaw le inn lianpipi an tam bik.' },
       { title: 'Rili (Ocean)', description: 'Rili cu ti a tamnak hmun kaupi a si i, vawleipia i a cheu thum ah a cheu hnih hi rili a si. Rili ti hi a ttha (salt water) a si i, saram le thingkung tampi an nung.' },
@@ -169,21 +169,21 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
       { title: 'Tikhal (Ice)', description: 'Tikhal cu ti a khalmi a si i, vawleicung a chaklei (North Pole) le a thlanglei (South Pole) ah tikhal lianpipi an um. Tikhal hna hi vawlei lumnak a tlamtlintertu an si.' },
       { title: 'Vawleicung (Continents)', description: 'Vawlei hi hmun lianpipi 7 ah an tthen hna i, Asia, Africa, North America, South America, Antarctica, Europe le Australia an si. Hi hmun hna hi rili nih a tthen hna.' },
       { title: 'Thli (Wind)', description: 'Thli cu a luangmi thli a si i, vawlei lumnak aa lo lonak in a chuak tawn. Thli nih vawlei lumnak a tlamtlinter i, thlihrang nih thawnnak (energy) zong a chuahter khawh.' },
-      { title: 'Esia (Asia)', description: 'Esia cu vawleicung ram lian bik le mi tam bik an umnak continent a si. Kan ram zong hi Esia chungah a um i, nungphung le holh tampi a umnak hmun a si.' },
-      { title: 'Afrika (Africa)', description: 'Afrika cu a lummi ram lianpi a si i, saram lianpipi le ramlak kaupi a umnak hmun a si. Afrika ahcun thlaler lianpipi zong an um.' },
-      { title: 'Pasifik (Pacific Ocean)', description: 'Pasifik cu vawleicung rili lian bik le a thuk bik a si i, vawlei i a cheu thum ah a cheu pakhat a khuh. Pasifik chungah thlihrang le tilian tampi an chuak tawn.' },
-      { title: 'Atlantik (Atlantic Ocean)', description: 'Atlantik cu rili lianpi pakhat a si i, Europe, Africa le America ram hna a pehtlaihter hna. Hi rili hi pehtlaihnak le thil phurhnak caah a biapi tuk.' },
-      { title: 'Ekuita (Equator)', description: 'Ekuita cu vawlei laifang a tthenmi rin (imaginary line) a si i, hi hmun hi vawleicung ah a lum biknak hmun a si. Ekuita nih vawlei kha chaklei le thlanglei ah a tthen.' },
+      { title: 'Asia', description: 'Asia cu vawleicung ram lian bik le mi tam bik an umnak continent a si. Kan ram zong hi Asia chungah a um i, nungphung le holh tampi a umnak hmun a si.' },
+      { title: 'Africa', description: 'Africa cu a lummi ram lianpi a si i, saram lianpipi le ramlak kaupi a umnak hmun a si. Africa ahcun thlaler lianpipi zong an um.' },
+      { title: 'Pacific Ocean', description: 'Pacific Ocean cu vawleicung rili lian bik le a thuk bik a si i, vawlei i a cheu thum ah a cheu pakhat a khuh. Pacific chungah thlihrang le tilian tampi an chuak tawn.' },
+      { title: 'Atlantic Ocean', description: 'Atlantic Ocean cu rili lianpi pakhat a si i, Europe, Africa le America ram hna a pehtlaihter hna. Hi rili hi pehtlaihnak le thil phurhnak caah a biapi tuk.' },
+      { title: 'Equator', description: 'Equator cu vawlei laifang a tthenmi rin (imaginary line) a si i, hi hmun hi vawleicung ah a lum biknak hmun a si. Equator nih vawlei kha chaklei le thlanglei ah a tthen.' },
       { title: 'Chaklei (North Pole)', description: 'Chaklei cu vawlei a chakbiknak hmun a si i, tikhal lawnglawng a um i a kik tukmi hmun a si. Hi hmun ahcun "Northern Lights" dawh tukmi an chuak tawn.' },
       { title: 'Thlanglei (South Pole)', description: 'Thlanglei cu vawlei a thlangbiknak hmun a si i, hi hmun zong hi tikhal lawng a um i a kik tuk ve. Antarctica continent cungah a um.' },
-      { title: 'Mitlang (Volcano)', description: 'Mitlang cu vawlei chung in meial (lava) a chuahmi tlang a si i, vawlei chung a lum tuknak in a chuak tawn. A chuah tikah vawlei thar a chuahter khawh.' },
-      { title: 'Vawleihninh (Earthquake)', description: 'Vawleihninh cu vawlei a hninhmi a si i, vawlei chung i a ummi lung lianpipi (tectonic plates) an i tthawn caah a chuak tawn. Vawleihninh nih thil tampi a hrawk khawh.' },
-      { title: 'Tilian (Tsunami)', description: 'Tilian cu rili chungah vawlei a hninh caah a chuahmi ti lianpi a si i, rili kam i a ummi khua hna a hrawk khawh. Tilian hi a ran tuk caah humhimnak lak a har tawn.' }
+      { title: 'Volcano', description: 'Volcano cu vawlei chung in meial (lava) a chuahmi tlang a si i, vawlei chung a lum tuknak in a chuak tawn. A chuah tikah vawlei thar a chuahter khawh.' },
+      { title: 'Earthquake', description: 'Earthquake cu vawlei a hninhmi a si i, vawlei chung i a ummi lung lianpipi (tectonic plates) an i tthawn caah a chuak tawn. Earthquake nih thil tampi a hrawk khawh.' },
+      { title: 'Tsunami', description: 'Tsunami cu rili chungah vawlei a hninh caah a chuahmi ti lianpi a si i, rili kam i a ummi khua hna a hrawk khawh. Tsunami hi a ran tuk caah humhimnak lak a har tawn.' }
     ],
     questions: [
       { question: 'Vawleicung ah continent zeizat dah a um?', options: ['5', '7', '9'], answer: 1 },
-      { question: 'Vawleicung rili lian bik cu zeidah a si?', options: ['Atlantik', 'Pasifik', 'Indian Ocean'], answer: 1 },
-      { question: 'Vawleicung ram lian bik continent cu zeidah a si?', options: ['Afrika', 'Europe', 'Esia (Asia)'], answer: 2 }
+      { question: 'Vawleicung rili lian bik cu zeidah a si?', options: ['Atlantic', 'Pacific', 'Indian Ocean'], answer: 1 },
+      { question: 'Vawleicung ram lian bik continent cu zeidah a si?', options: ['Africa', 'Europe', 'Asia'], answer: 2 }
     ]
   },
   INVENTORS: {
@@ -220,14 +220,14 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
     ]
   },
   VITAMINS: {
-    title: 'Vaitamin le Taksa Ngandamnak (Vitamins & Health)',
+    title: 'Vitamin le Taksa Ngandamnak (Vitamins & Health)',
     icon: React.createElement(Zap, { className: "w-8 h-8 text-orange-500" }),
     entries: [
-      { title: 'Vaitamin A', description: 'Vaitamin A cu mit caah a ttha bik i, zan ah thil hmuh khawnak a bawmh. Rawl hring le rawl sen (entatnak: gaza) hna ah a tam bik i vun ngandamnak zong a bawmh.' },
-      { title: 'Vaitamin B', description: 'Vaitamin B nih taksa thawnnak a kan pek i, kan thluak le kan hri hna rianttuannak a bawmh hna. Rawl hrawhpiaknak le thi tthat nakhnga zong a biapi tuk.' },
-      { title: 'Vaitamin C', description: 'Vaitamin C nih zawtnak a kan kham i, kan vun le kan hma dam rannak a bawmh. Thingthei thur (entatnak: huanthli) hna ah a tam bik i ruh le ha caah zong a ttha.' },
-      { title: 'Vaitamin D', description: 'Vaitamin D cu ruh le ha caah a ttha bik i, niceu in fawi tein kan hmuh khawh. Hi vaitamin nih calcium kha taksa chungah a luhter tawn.' },
-      { title: 'Vaitamin E', description: 'Vaitamin E cu vun caah a ttha i, taksa chung i a tthalo mi hna kha a thiangter hna. Seal hna a hrawk khawhmi thil in a kan humhim.' },
+      { title: 'Vitamin A', description: 'Vitamin A cu mit caah a ttha bik i, zan ah thil hmuh khawnak a bawmh. Rawl hring le rawl sen (entatnak: gaza) hna ah a tam bik i vun ngandamnak zong a bawmh.' },
+      { title: 'Vitamin B', description: 'Vitamin B nih taksa thawnnak a kan pek i, kan thluak le kan hri hna rianttuannak a bawmh hna. Rawl hrawhpiaknak le thi tthat nakhnga zong a biapi tuk.' },
+      { title: 'Vitamin C', description: 'Vitamin C nih zawtnak a kan kham i, kan vun le kan hma dam rannak a bawmh. Thingthei thur (entatnak: huanthli) hna ah a tam bik i ruh le ha caah zong a ttha.' },
+      { title: 'Vitamin D', description: 'Vitamin D cu ruh le ha caah a ttha bik i, niceu in fawi tein kan hmuh khawh. Hi vitamin nih calcium kha taksa chungah a luhter tawn.' },
+      { title: 'Vitamin E', description: 'Vitamin E cu vun caah a ttha i, taksa chung i a tthalo mi hna kha a thiangter hna. Cells hna a hrawk khawhmi thil in a kan humhim.' },
       { title: 'Calcium', description: 'Calcium nih ruh le ha a hrawngter i a fehter. Hnawi le thil dang tampi ah a um i, sa (muscles) rianttuannak caah zong a herh.' },
       { title: 'Iron', description: 'Iron cu thi caah a biapi tuk i, taksa pumpi ah oxygen phurhnak a bawmh. Iron a tlawm ahcun taksa a thazaang a tlawm i a lennak a chuak tawn.' },
       { title: 'Zinc', description: 'Zinc nih hma a damter rannak a bawmh i, kan taksa i zawtnak kham khawnak (immune system) a fehter. Tthannak le tawt hngalhnak caah zong a herh.' },
@@ -235,21 +235,21 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
       { title: 'Magnesium', description: 'Magnesium nih sa (muscles) le hri hna rianttuannak a bawmh hna i, lung zong a fehter. Thawnnak chuahtertu zong a si.' },
       { title: 'Iodine', description: 'Iodine nih hrawngphu (goiter) zawtnak a kham i, taksa tthannak le thluak tthan nakhnga caah a biapi tuk. Cite chungah telh tawn a si.' },
       { title: 'Protein', description: 'Protein nih taksa a hrawngter i a kan tthanter. Sa, nga, titthe le pe hna ah a tam bik i, taksa i a hrawkmi hmun hna sersiam tthannak caah a herh.' },
-      { title: 'Vaitamin K', description: 'Vaitamin K nih thi a khalter i, hma kan i tuah tikah thi a dih tuknak in a kan kham. Hnahhring rawl hna ah a tam bik.' },
+      { title: 'Vitamin K', description: 'Vitamin K nih thi a khalter i, hma kan i tuah tikah thi a dih tuknak in a kan kham. Hnahhring rawl hna ah a tam bik.' },
       { title: 'Sodium', description: 'Sodium nih taksa chung ti a tlamtlinter i, hri hna rianttuannak a bawmh hna. Cite chungah a tam bik i, tam tuk din ahcun lung caah a tthalo.' },
       { title: 'Phosphorus', description: 'Phosphorus nih ruh le ha a fehter i, taksa thawnnak chuahtertu zong a si. Calcium he ttuan ttin in ruh an fehter.' },
-      { title: 'Fiba (Fiber)', description: 'Fiba nih cunlei rian a bawmh i, rawl a hrawh rannak le ek fawi tein chuahnak a bawmh. Thingthei le hnahhring rawl ah a tam bik.' },
-      { title: 'Kabawhaidret (Carbohydrates)', description: 'Kabawhaidret nih taksa thawnnak (energy) a kan pek i, buh, sang le thil dang ah a tam bik. Taksa caah thawnnak hrampi a si.' },
-      { title: 'Sat (Fats)', description: 'Sat nih taksa lumnak le thawnnak a khong i, kan taksa chung i a biapi bikmi hmun hna a humhim. Vaitamin a cheu hna taksa chung luhtertu zong a si.' },
+      { title: 'Fiber', description: 'Fiber nih cunlei rian a bawmh i, rawl a hrawh rannak le ek fawi tein chuahnak a bawmh. Thingthei le hnahhring rawl ah a tam bik.' },
+      { title: 'Carbohydrates', description: 'Carbohydrates nih taksa thawnnak (energy) a kan pek i, buh, sang le thil dang ah a tam bik. Taksa caah thawnnak hrampi a si.' },
+      { title: 'Sat (Fats)', description: 'Sat nih taksa lumnak le thawnnak a khong i, kan taksa chung i a biapi bikmi hmun hna a humhim. Vitamin a cheu hna taksa chung luhtertu zong a si.' },
       { title: 'Ti (Water)', description: 'Ti cu taksa caah a biapi bikmi a si i, taksa chung i a tthalo mi vialte chuahtertu a si. Taksa lumnak tlamtlintertu le pehtlaihnak hna a nemtertu a si.' },
-      { title: 'Ilektrolai (Electrolytes)', description: 'Ilektrolai nih taksa chung thawnnak a tlamtlinter i, taksa sawmnak kan tuah tikah a biapi tuk. Sodium, potassium le calcium hna hi an si.' },
-      { title: 'Antiawksidan (Antioxidants)', description: 'Antiawksidan nih taksa seal hna kha a humhim hna i, zawtnak le upat rannak in a kan kham. Thingthei le hnahhring rawl ah an tam bik.' },
-      { title: 'Probaiawtik (Probiotics)', description: 'Probaiawtik nih cun chungah a tthami baktiria a chuahter hna i, ngandamnak a bawmh. Hnawi-thur (yogurt) hna ah an tam bik.' }
+      { title: 'Electrolytes', description: 'Electrolytes nih taksa chung thawnnak a tlamtlinter i, taksa sawmnak kan tuah tikah a biapi tuk. Sodium, potassium le calcium hna hi an si.' },
+      { title: 'Antioxidants', description: 'Antioxidants nih taksa cells hna kha a humhim hna i, zawtnak le upat rannak in a kan kham. Thingthei le hnahhring rawl ah an tam bik.' },
+      { title: 'Probiotics', description: 'Probiotics nih cun chungah a tthami bacteria a chuahter hna i, ngandamnak a bawmh. Hnawi-thur (yogurt) hna ah an tam bik.' }
     ],
     questions: [
-      { question: 'Mit caah a ttha bikmi vaitamin cu zeidah a si?', options: ['Vaitamin A', 'Vaitamin C', 'Vaitamin D'], answer: 0 },
+      { question: 'Mit caah a ttha bikmi vitamin cu zeidah a si?', options: ['Vitamin A', 'Vitamin C', 'Vitamin D'], answer: 0 },
       { question: 'Ruh le ha a fehtertu cu zeidah a si?', options: ['Iron', 'Calcium', 'Zinc'], answer: 1 },
-      { question: 'Vaitamin D cu zeika in dah fawi tein kan hmuh khawh?', options: ['Ti chung in', 'Ni-ceu in', 'Thli chung in'], answer: 1 }
+      { question: 'Vitamin D cu zeika in dah fawi tein kan hmuh khawh?', options: ['Ti chung in', 'Ni-ceu in', 'Thli chung in'], answer: 1 }
     ]
   },
   UNIVERSE: {
@@ -258,27 +258,27 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
     entries: [
       { title: 'Ni (Sun)', description: 'Ni hi vawleicung thil nung vialte caah thawnnak (energy) a petu a si. Ni hi arfi (star) pakhat a si i, vawlei nakin a lian deuh tuk. Ni hi a lum tuk caah a hram ahcun thil nung pakhat hmanh an nung kho lo.' },
       { title: 'Thla (Moon)', description: 'Thla hi vawlei i a satellite a si i, zan ah a ceu tawn. Thla cungah hin thli le ti a um lo caah thil nung an nung kho lo. Thla nih hin rili ti a sannak le a tthiamnak (tides) zong a hruai tawn.' },
-      { title: 'Zupita (Jupiter)', description: 'Zupita cu vawleicung thlaphal (planets) vialte lakah a lian bikmi a si. Zupita hi gas in tuahmi a si i, vawlei nakin voi 1,300 leng a lian deuh. Zupita nih hin thla (moons) 90 leng a ngei.' },
-      { title: 'Saturn (Saturn)', description: 'Saturn cu a velchum ah thil dawh (rings) a ngeimi thlaphal a si. Hi thil hna hi tikhal le lung hmete hna in tuahmi an si i, Saturn zong hi gas in tuahmi a si ve.' },
-      { title: 'Mars (Mars)', description: 'Mars cu a senmi thlaphal (Red Planet) tiah an auh tawn i, vawlei he an sining aa lo bikmi a si. Mars cungah hin hlanlio ah ti a rak um tiah mifim hna nih an zumh.' },
-      { title: 'Venus (Venus)', description: 'Venus cu vawleicung thlaphal vialte lakah a lum bikmi a si i, zan ah a ceu bikmi zong a si. Venus hi vawlei he an i lo tuk caah "Vawlei i a farnu" tiah an auh tawn.' },
-      { title: 'Mercury (Mercury)', description: 'Mercury cu ni (sun) he a naih bikmi thlaphal a si i, a hme bikmi zong a si. Mercury ahcun chun ah a lum tuk i zan ah a kik tuk tawn.' },
-      { title: 'Uranus (Uranus)', description: 'Uranus cu a kik tukmi thlaphal a si i, a hringdu (blue-green) in a hmuh khawh. Uranus hi a tlu (sideways) in a mer tawnmi thlaphal pakhat a si.' },
-      { title: 'Neptune (Neptune)', description: 'Neptune cu ni (sun) in a hlat bikmi thlaphal a si i, thlihrang a tthang biknak hmun a si. Neptune zong hi a hringdu (blue) in a dawh tukmi a si.' },
+      { title: 'Jupiter', description: 'Jupiter cu vawleicung thlaphal (planets) vialte lakah a lian bikmi a si. Jupiter hi gas in tuahmi a si i, vawlei nakin voi 1,300 leng a lian deuh. Jupiter nih hin thla (moons) 90 leng a ngei.' },
+      { title: 'Saturn', description: 'Saturn cu a velchum ah thil dawh (rings) a ngeimi thlaphal a si. Hi thil hna hi tikhal le lung hmete hna in tuahmi an si i, Saturn zong hi gas in tuahmi a si ve.' },
+      { title: 'Mars', description: 'Mars cu a senmi thlaphal (Red Planet) tiah an auh tawn i, vawlei he an sining aa lo bikmi a si. Mars cungah hin hlanlio ah ti a rak um tiah mifim hna nih an zumh.' },
+      { title: 'Venus', description: 'Venus cu vawleicung thlaphal vialte lakah a lum bikmi a si i, zan ah a ceu bikmi zong a si. Venus hi vawlei he an i lo tuk caah "Vawlei i a farnu" tiah an auh tawn.' },
+      { title: 'Mercury', description: 'Mercury cu ni (sun) he a naih bikmi thlaphal a si i, a hme bikmi zong a si. Mercury ahcun chun ah a lum tuk i zan ah a kik tuk tawn.' },
+      { title: 'Uranus', description: 'Uranus cu a kik tukmi thlaphal a si i, a hringdu (blue-green) in a hmuh khawh. Uranus hi a tlu (sideways) in a mer tawnmi thlaphal pakhat a si.' },
+      { title: 'Neptune', description: 'Neptune cu ni (sun) in a hlat bikmi thlaphal a si i, thlihrang a tthang biknak hmun a si. Neptune zong hi a hringdu (blue) in a dawh tukmi a si.' },
       { title: 'Pluto (Pluto)', description: 'Pluto cu hlan ah thlaphal (planet) tiah an rak auh tawn i, tuchan ahcun "dwarf planet" tiah an auh cang. Pluto hi a hme tuk i a kik tukmi hmun a si.' }
     ],
     questions: [
-      { question: 'Thlaphal vialte lakah a lian bikmi cu zeidah a si?', options: ['Maas', 'Zupita (Jupiter)', 'Satan'], answer: 1 },
+      { question: 'Thlaphal vialte lakah a lian bikmi cu zeidah a si?', options: ['Mars', 'Jupiter', 'Saturn'], answer: 1 },
       { question: 'Ni-ceu nih vawlei phanh caah minit zeizat dah a rau?', options: ['5 minit', '8 minit', '12 minit'], answer: 1 },
-      { question: 'A senmi thlaphal (Red Planet) tiah an auhmi cu zeidah a si?', options: ['Maas (Mars)', 'Vinas', 'Nep-tun'], answer: 0 }
+      { question: 'A senmi thlaphal (Red Planet) tiah an auhmi cu zeidah a si?', options: ['Mars', 'Venus', 'Neptune'], answer: 0 }
     ]
   },
   SUPERLATIVES: {
     title: 'Vawleicung ah A Lian le A Sang Bik hna (World Records)',
     icon: React.createElement(Trophy, { className: "w-8 h-8 text-amber-500" }),
     entries: [
-      { title: 'Evares Tlang (Mount Everest)', description: 'Evares Tlang (Mount Everest) cu vawleicung tlang a sang bik a si i, a sannak hi pe 29,032 a si. Nepal le China ramri ah a um i, tlang cungah hin thli a tlawm i a kik tuk tawn.' },
-      { title: 'Nail Tiva (Nile River)', description: 'Nail Tiva (Nile River) cu vawleicung tiva a sau bik a si i, Africa ram tampi a paltlang hna. Hi tiva hi hlanlio Egypt mi hna caah nunnak hrampi a rak si.' },
+      { title: 'Everest Tlang (Mount Everest)', description: 'Everest Tlang (Mount Everest) cu vawleicung tlang a sang bik a si i, a sannak hi pe 29,032 a si. Nepal le China ramri ah a um i, tlang cungah hin thli a tlawm i a kik tuk tawn.' },
+      { title: 'Nile Tiva (Nile River)', description: 'Nile Tiva (Nile River) cu vawleicung tiva a sau bik a si i, Africa ram tampi a paltlang hna. Hi tiva hi hlanlio Egypt mi hna caah nunnak hrampi a rak si.' },
       { title: 'Pasifik Rili (Pacific Ocean)', description: 'Pasifik Rili (Pacific Ocean) cu vawleicung rili a lian bik le a thuk bik a si. Vawleipia i a cheu thum ah a cheu pakhat hi Pasifik rili nih a khuh.' },
       { title: 'Sahara Thlaler (Sahara Desert)', description: 'Sahara Thlaler (Sahara Desert) cu vawleicung thlaler a lum bik le a lian bik a si. Africa ram chaklei ah a um i, a kauh hi US ram he an i tluk hrawng a si.' },
       { title: 'Vui Lian (Blue Whale)', description: 'Vui Lian (Blue Whale) cu vawleicung saram a lian bik a si i, a sawhnak hi pe 100 leng a si. Hi saram hi nga a si lo i, sahnawidawt (mammal) a si.' },
@@ -287,7 +287,7 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
       { title: 'China', description: 'China cu vawleicung mi a tam biknak ram a si i, mi 1.4 billion leng an nung. China ram hi thil chuah rannak le teknawlawzi lei ah a tthang bikmi ram pakhat a si.' },
       { title: 'Angel Falls', description: 'Angel Falls cu vawleicung tiva a tlaknak (waterfall) a sang bik a si i, Venezuela ram ah a um. A sannak hi pe 3,212 a si i, van in a tla bantuk a si.' },
       { title: 'Amazon Ramlak (Amazon Rainforest)', description: 'Amazon Ramlak (Amazon Rainforest) cu vawleicung ramlak a lian bik a si i, South America ah a um. Hi ramlak nih hin vawleicung oxygen a cheu hnih hrawng a chuahter tawn.' },
-      { title: 'Cita (Cheetah)', description: 'Cita (Cheetah) cu vawleicung saram a tli rang bik a si i, suimilam pakhat ah meng 70 leng a tli khawh. Cita hi a tli rang tuk caah saram dang fawi tein a tlai khawh hna.' },
+      { title: 'Cheetah', description: 'Cheetah cu vawleicung saram a tli rang bik a si i, suimilam pakhat ah meng 70 leng a tli khawh. Cheetah hi a tli rang tuk caah saram dang fawi tein a tlai khawh hna.' },
       { title: 'Vui (Elephant)', description: 'Vui cu vawlei cung saram a lian bik a si i, a thazaang a tthawng tuk. Vui hi an fim tuk i, an thil hngalhmi (memory) a ttha tuk tawn.' },
       { title: 'Giraffe', description: 'Giraffe cu vawleicung saram a sang bik a si i, a hrawng a sau tuk caah thingkung sangpi i a ummi hnah hna fawi tein a ei khawh.' },
       { title: 'Ostrich', description: 'Ostrich cu vawleicung vate a lian bik a si i, a zuang kho lo nain a tli a rang tuk. Ostrich nih hin vawleicung vate ti a lian bikmi a thlah tawn.' },
@@ -301,10 +301,10 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
       { title: 'Marmot', description: 'Marmot cu vawleicung saram a hngilh sau bik tiah an zumh i, thlasik chung vialte an i dinh tawn. Hi nih hin an thawnnak a khong tawn.' }
     ],
     questions: [
-      { question: 'Vawleicung ah a sang bikmi tlang cu zeidah a si?', options: ['Andis', 'Evares (Mount Everest)', 'Victoria Falls'], answer: 1 },
-      { question: 'Vawleicung ah a sau bikmi tiva cu zeidah a si?', options: ['Naial (Nile River)', 'Amazon', 'Tiva lian'], answer: 0 },
-      { question: 'Vawleicung ah a lian bikmi saram cu zeidah a si?', options: ['Satngaw', 'Rili chung nga lian (Blue Whale)', 'Vui'], answer: 1 },
-      { question: 'A ran bikmi saram cu zeidah a si?', options: ['Chita (Cheetah)', 'Sakei', 'Vui'], answer: 0 },
+      { question: 'Vawleicung ah a sang bikmi tlang cu zeidah a si?', options: ['Andis', 'Everest', 'Victoria Falls'], answer: 1 },
+      { question: 'Vawleicung ah a sau bikmi tiva cu zeidah a si?', options: ['Nile', 'Amazon', 'Tiva lian'], answer: 0 },
+      { question: 'Vawleicung ah a lian bikmi saram cu zeidah a si?', options: ['Satngaw', 'Blue Whale', 'Vui'], answer: 1 },
+      { question: 'A ran bikmi saram cu zeidah a si?', options: ['Cheetah', 'Sakei', 'Vui'], answer: 0 },
       { question: 'A mi tam biknak ram cu zeidah a si?', options: ['USA', 'China', 'India'], answer: 2 }
     ]
   },
@@ -391,95 +391,22 @@ export const EDUCATIONAL_DATA: Record<string, CategoryData> = {
       { title: 'Panglong Agreement (Panglong Hnatlaknak)', description: '1947 ah Laimi hruaitu hna (entatnak: Vumthu Maung) nih Kawlram zalonnak hmuh ttin khawnak dingah hnatlaknak an rak tuah. Hi hnatlaknak nih hin miphun hna i tlukrualnak le mah tein ualnak (federalism) hram a rak sersiam.' },
       { title: 'Chin Hills Regulation 1896', description: 'Mirang (British) chan lio i Chin ram ualnak dingah tuahmi upadi a si. Hi nih hin Laimi nungphung, biakhiahnak le ualnak kha hlanlio sining tein hmunhter a rak bawmh i Mirang hna nih Laimi sining an rak upatnak a si.' },
       { title: 'Missionary hna Rian (Early Education)', description: 'Arthur le Laura Carson hna cu Hakha ah missionary rian a ttuan hmasa bikmi an si. Anmah nih cawnnak (education) le ngandamnak lei thiamnak hram an rak thawkpiak hna i, Laimi ca (script) zong an rak sersiam.' },
-      { title: 'Laimi Nungphung (Culture & Traditions)', description: 'Laimi cu pakhat le pakhat i bawmhchanh a thiammi kan si. Khuado, Thlazun le thil dang tampi hi kan nungphung hmelchunhnak an si i, kan pupa hna sining kan hmunhter tthan tawn.' },
       { title: 'Chin Hills (Chin Tlangram)', description: 'Chin ram cu tlang tampi a umnak hmun a si. A sang bikmi tlang cu Khonumthung (Mount Victoria) a si i, pe 10,200 hrawng a sang. Chin ram hi a muidawh tuk i thli thiang a tamnak hmun a si.' },
-      { title: 'Laimi Thilthuam (Traditional Clothing)', description: 'Laimi thilthuam hna hi kan muidawhnak le kan sining hmelchunhnak an si. Phun kip in puan le thilthuam dawh tampi kan ngei i, miphun tthen (tribes) kip nih mah le thilthuam dawh cio kan ngei.' },
       { title: 'Chin Dictionary (Laimi Holh)', description: 'Laimi holh hi a thuk i a dawh tukmi a si. Hakha holh hi Chin ram chungah mi tam bik nih an hmanmi holh pakhat a si i, pehtlaihnak caah a biapi tukmi holh a si.' },
       { title: 'Chin Human Rights (Laimi Covo)', description: 'Laimi hna kan covo le kan zalonnak humhim ding hi a biapi tuk. CHRO bantuk phu hna nih vawleipia ah Laimi sining le kan tonmi hna an langhter tawn i humhimnak an ttuan.' },
       { title: 'Laimi Lungrualnak (Unity)', description: 'Laimi kan si ti hngalhnak nih lungrualnak a kan pek. Ram kip ah kan um zongah Laimi kan si ti hngalhnak nih a kan pehtlaihter zungzal i, miphun pakhat kan sinak a fehter.' },
       { title: 'Hlanlio Ualnak (Governance)', description: 'Hlanlio ahcun khua khat ah Bawi (Chief) an rak um i, khua mipi kha ttha tein an rak hruai hna. Hi sining hi 1948 ah mipi ualnak (democracy) ah thlen a rak si i mipi nawl a sang deuh cang.' },
       { title: 'Chin Ram Hmelchunhnak (Identity)', description: 'Chin ti hi kan ram le kan miphun hmelchunhnak a si. Hi nih hin vawleicung ah miphun pakhat kan si ti a kan hngalhter i, kan pupa hna sinin kan hmuhmi hming a si.' },
-      { title: 'Khuado Pwe (Festival)', description: 'Khuado hi Laimi hna caah a biapi bikmi pwe pakhat a si. Rawl thar lak tikah Pathian sinah lawmhnak langhternak le thlarau tthalo hna hloternak caah tuahmi a si i, mipi an i nuam tawn.' },
-      { title: 'Thlazun Pwe (Festival)', description: 'Thlazun hi thlaphal thar a chuah tikah tuahmi pwe a si. Hi pwe ah hin khua mipi lungrual tein an i nuam tawn i, rawl ttha le sa ttha hna an ei ttin tawn.' },
-      { title: 'Laimi Hriamnam (Traditional Weapons)', description: 'Hlanlio ahcun Laimi hna nih thal, fe le nam hna hi raldonak le sa-tlaihnak ah an rak hman. Hi hriamnam hna hi kan miphun raltthanak le fehnak hmelchunhnak an si.' },
-      { title: 'Laimi Inn (Traditional Houses)', description: 'Laimi inn hna hi thing le hrampi in tuahmi an si tawn. Inn hmai ah sa-lu (animal trophies) hna an tar i, hi nih hin inn-ngeitu raltthanak le thawnnak a langhter tawn.' },
-      { title: 'Sabuti (Traditional Food)', description: 'Sabuti hi Laimi rawl lakah a hmingthang bikmi pakhat a si. Fang le sa ttha tein chuannak in tuahmi a si i, a tthawnnak a tam tuk i Laimi rawl hrampi pakhat a si.' },
       { title: 'Pau Cin Hau (Script & Religion)', description: 'Pau Cin Hau cu Laimi hna caah ca (script) le biaknak thar a rak chuahtertu a si. Laimi hna kha mah tein ca ngeih khawnak le Pathian pakhat biaknak lam a rak hmuhter hna.' },
-      { title: 'Laimi Laam (Traditional Dances)', description: 'Laimi laam hna hi kan nungphung ah a dawh bikmi an si. Sarlam, Chailam le thil dang tampi hi pwe le lawmhnak ah kan laam tawn i kan muidawhnak a langhter.' },
-      { title: 'Lung-phun (Stone Memorials)', description: 'Laimi hna nih thil ttha a tuahmi hna asiloah ralttha hna hngalhnak caah lung lianpipi an rak phun tawn. Hi lung hna nih hin hlanlio tuanbia le kan pupa hna thiamnak a kan hngalhter.' },
       { title: 'Chin-Lushai Expedition (1889-1890)', description: 'Mirang (British) hna nih Chin ram lak dingah ralkap an rak thlah lio ah Laimi ralttha tampi nih an rak doh hna. Hi nih hin Laimi kan raltthanak le kan ram kan dawtnak a langhter.' },
-      { title: 'Laimi Thlacamnak (Traditional Beliefs)', description: 'Hlanlio ahcun Laimi hna nih "Khuazing" sinah thla an rak cam tawn. Pathian pakhat lawng a um ti hngalhnak hram a si i, thil nung vialte sersiamtu a si tiah an rak zumh.' },
-      { title: 'Chin State Day (January 3)', description: 'January 3 hi Chin State Day a si. 1974 ah Chin ram kha "State" pakhat in hmuhmi ni a si i, kan ram caah a biapi tukmi ni a si i mah tein ualnak hmelchunhnak a si.' },
-      { title: 'Laimi Zu (Traditional Drink)', description: 'Zu hi Laimi nungphung ah pwe le lawmhnak ah hmanmi a si tawn. Mi-leng (guests) hna upatnak pek-nak le lungrualnak hmelchunhnak ah zong hman a si.' },
-      { title: 'Laimi Hla (Traditional Songs)', description: 'Laimi hla hna hi kan lungretheihnak le kan lawmhnak hna langhternak a si. Hlanlio hla hna nih kan sining, kan tuanbia le kan nungphung a kan hngalhter zungzal.' },
-      { title: 'Laimi Thiamnak (Craftsmanship)', description: 'Laimi hna hi thil tuah thiammi kan si. Sum (baskets), thilthuam le thil dang tampi hi kut in tuahmi an si tawn i, tuchan tiang kan thiamnak a hmun zungzal.' }
+      { title: 'Chin State Day (January 3)', description: 'January 3 hi Chin State Day a si. 1974 ah Chin ram kha "State" pakhat in hmuhmi ni a si i, kan ram caah a biapi tukmi ni a si i mah tein ualnak hmelchunhnak a si.' }
     ],
     questions: [
       { question: 'Chin National Day (Laimi Ni) cu ni-thla zeizat dah a si?', options: ['January 4', 'February 12', 'February 20'], answer: 2 },
       { question: 'Chin ram ah a sang bikmi tlang cu zeidah a si?', options: ['Mount Everest', 'Khonumthung (Mt. Victoria)', 'Zingmet'], answer: 1 },
       { question: 'Panglong Agreement (1947) ah a telmi Laimi hruaitu cu ahni dah a si?', options: ['Vumthu Maung', 'Thomas Edison', 'Steve Jobs'], answer: 0 },
       { question: 'Hakha ah missionary rian a ttuan hmasa bikmi cu ahni dah an si?', options: ['Brothers Grimm', 'Arthur le Laura Carson', 'Wright Brothers'], answer: 1 },
-      { question: 'Khuado Pwe cu zeicah tuahmi a si?', options: ['Rawl thar lak tikah Pathian lawmhnak pek-nak', 'Mei chuah caah', 'Ti din caah'], answer: 0 },
-      { question: 'Sabuti cu zeidah a si?', options: ['Laimi rawl hmingthang', 'Laimi thilthuam', 'Laimi laam'], answer: 0 },
-      { question: 'Pau Cin Hau cu zeidah a rak tuah?', options: ['Laimi ca le biaknak thar a chuahter', 'Mawtaw a sersiam', 'Vanlawng a chuahter'], answer: 0 },
-      { question: 'Chin State Day cu ni-thla zeizat dah a si?', options: ['January 3', 'February 20', 'March 2'], answer: 0 },
-      { question: 'Laimi laam hmingthang pakhat cu zeidah a si?', options: ['Sarlam', 'Hip-hop', 'Ballet'], answer: 0 }
-    ]
-  },
-  PROVERBS: {
-    title: 'Laimi Ca le Hngalh-nak (Chin Proverbs & Wisdom)',
-    icon: React.createElement(BookMarked, { className: "w-8 h-8 text-emerald-700" }),
-    entries: [
-      { title: 'Lungrualnak cu thawnnak a si (Unity is Strength)', description: 'Mipi lung a rual ahcun rian lianpipi fawi tein kan ttuan khawh i, ral zong kan doh khawh hna. Lungrualnak hi miphun fehnak le hlawhtlinnak hrampi a si.' },
-      { title: 'Pathian ttih cu fimnak hram a si (Fear of God is Wisdom)', description: 'Pathian kan ttih i a nawl kan ngaih ahcun, thil ttha le thil tthalo fawi tein kan thleidang khawh i nunnak ah hruaitu ttha kan hmu tawn.' },
-      { title: 'Miphun hmunhnak cu ca a si (Literature Preserves Nation)', description: 'Mah miphun ca kan ngeih i kan hman ahcun, kan nungphung le kan tuanbia hna hi vawleicung ah an hlo lai lo i miphun dang lakah kan sining a hmun zungzal lai.' },
-      { title: 'Fimnak cu thawnnak a si (Knowledge is Power)', description: 'Thil tampi kan hngalh i kan cawn ahcun, kan nunnak ah fawinak a kan pek i midang bawmh khawnak thazaang le thiamnak a kan pek.' },
-      { title: 'Tuanbia hngalh lo cu mah sining hngalh lo a si (History is Identity)', description: 'Hlanlio kan pupa hna sining le an tuanbia kan hngalh lo ahcun, tuchan ah ahni dah kan si i zeika in dah kan rat ti kan hngal kho lai lo i kan hlo fawi lai.' },
-      { title: 'I bawmhchanh cu Laimi sining a si (Mutual Help is Chin Trait)', description: 'Laimi cu pakhat le pakhat i bawmhchanh a thiammi kan si. Hi sining hi kan miphun a dawhtertu, a fehtertu le midang lakah upat kan hmuhnak a si.' }
-    ],
-    questions: [
-      { question: 'Lungrualnak cu zeidah a si?', options: ['Thawnnak', 'Thazaang tlawm-nak', 'Nuam-nak'], answer: 0 },
-      { question: 'Miphun hmunh nakhnga dingah zeidah a herh?', options: ['Ca (Literature)', 'Mawtaw', 'Ti thlum'], answer: 0 },
-      { question: 'Fimnak cu zeidah a si?', options: ['Thawnnak (Power)', 'Thil rit', 'Mei-inn'], answer: 0 }
+      { question: 'Chin State Day cu ni-thla zeizat dah a si?', options: ['January 3', 'February 20', 'March 2'], answer: 0 }
     ]
   }
 };
-
-export interface GalleryItem {
-  title: string;
-  description: string;
-  imageUrl: string;
-}
-
-export const GALLERY_DATA: GalleryItem[] = [
-  {
-    title: 'Chin Hills (Chin Tlangram)',
-    description: 'Chin ram i a muidawh bikmi tlang hna le thli thiang a umnak hmun hna an si.',
-    imageUrl: 'https://picsum.photos/seed/chin-hills/800/600'
-  },
-  {
-    title: 'Laimi Thilthuam (Traditional Weaving)',
-    description: 'Laimi hna nih kut in an tawnmi puan dawh hna an si. Phun kip in muidawh tampi a um.',
-    imageUrl: 'https://picsum.photos/seed/weaving/800/600'
-  },
-  {
-    title: 'Khuado Pwe (Khuado Festival)',
-    description: 'Laimi hna i a biapi bikmi pwe a si i, mipi lungrual tein an i nuam tawn.',
-    imageUrl: 'https://picsum.photos/seed/festival/800/600'
-  },
-  {
-    title: 'Laimi Laam (Traditional Dance)',
-    description: 'Sarlam le Chailam bantuk in muidawh tein laamnak hna an si.',
-    imageUrl: 'https://picsum.photos/seed/dance/800/600'
-  },
-  {
-    title: 'Laimi Inn (Traditional House)',
-    description: 'Hlanlio Laimi hna nih thing le hrampi in an rak sakmi inn muidawh hna an si.',
-    imageUrl: 'https://picsum.photos/seed/traditional-house/800/600'
-  },
-  {
-    title: 'Sabuti (Traditional Food)',
-    description: 'Laimi rawl lakah a hmingthang bikmi sabuti muidawh tein chuannak a si.',
-    imageUrl: 'https://picsum.photos/seed/food/800/600'
-  }
-];

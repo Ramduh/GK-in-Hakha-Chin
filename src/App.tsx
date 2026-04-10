@@ -19,12 +19,11 @@ import {
   BookMarked,
   Star,
   StarOff,
-  Bookmark,
-  Image as ImageIcon
+  Bookmark
 } from 'lucide-react';
-import { EDUCATIONAL_DATA, CategoryData, Entry, QuizQuestion, GALLERY_DATA, GalleryItem } from './data';
+import { EDUCATIONAL_DATA, CategoryData, Entry, QuizQuestion } from './data';
 
-type Screen = 'HOME' | 'LEARN' | 'QUIZ' | 'CATEGORY_DETAIL' | 'FAVORITES' | 'GALLERY';
+type Screen = 'HOME' | 'LEARN' | 'QUIZ' | 'CATEGORY_DETAIL' | 'FAVORITES';
 
 interface FavoriteEntry {
   categoryKey: string;
@@ -33,6 +32,39 @@ interface FavoriteEntry {
   description: string;
 }
 
+
+const pageVariants = {
+  initial: { opacity: 0, x: 10 },
+  animate: { 
+    opacity: 1, 
+    x: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.25, 1, 0.5, 1],
+      staggerChildren: 0.1
+    }
+  },
+  exit: { 
+    opacity: 0, 
+    x: -10,
+    transition: {
+      duration: 0.3,
+      ease: [0.25, 1, 0.5, 1]
+    }
+  }
+};
+
+const itemVariants = {
+  initial: { opacity: 0, y: 15 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.25, 1, 0.5, 1]
+    }
+  }
+};
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>('HOME');
@@ -146,18 +178,20 @@ export default function App() {
           {screen === 'HOME' && (
             <motion.div
               key="home"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="space-y-8"
             >
-              <div className="text-center space-y-2">
+              <motion.div variants={itemVariants} className="text-center space-y-2">
                 <h2 className="text-3xl font-serif font-bold">Hngalhnak thar i lak u</h2>
                 <p className="text-black/60">Vawleicung thil sining le thiamnak lei cawnnak</p>
-              </div>
+              </motion.div>
 
               <div className="grid grid-cols-1 gap-4">
-                <button
+                <motion.button
+                  variants={itemVariants}
                   onClick={() => setScreen('LEARN')}
                   className="group relative overflow-hidden bg-white p-8 rounded-[32px] shadow-sm border border-black/5 flex items-center justify-between transition-all hover:shadow-md active:scale-95"
                 >
@@ -166,9 +200,10 @@ export default function App() {
                     <h3 className="text-2xl font-serif font-bold">Thil thar cawnnak</h3>
                   </div>
                   <BookOpen className="w-10 h-10 text-olive opacity-80" />
-                </button>
+                </motion.button>
 
-                <button
+                <motion.button
+                  variants={itemVariants}
                   onClick={() => setScreen('FAVORITES')}
                   className="group relative overflow-hidden bg-white p-8 rounded-[32px] shadow-sm border border-black/5 flex items-center justify-between transition-all hover:shadow-md active:scale-95"
                 >
@@ -177,20 +212,10 @@ export default function App() {
                     <h3 className="text-2xl font-serif font-bold">Na duhmi hna</h3>
                   </div>
                   <Star className="w-10 h-10 text-amber-500 opacity-80" />
-                </button>
+                </motion.button>
 
-                <button
-                  onClick={() => setScreen('GALLERY')}
-                  className="group relative overflow-hidden bg-white p-8 rounded-[32px] shadow-sm border border-black/5 flex items-center justify-between transition-all hover:shadow-md active:scale-95"
-                >
-                  <div className="space-y-1 text-left">
-                    <span className="text-xs font-bold uppercase tracking-widest text-rose-500">Hmanthlak</span>
-                    <h3 className="text-2xl font-serif font-bold">Chin Nungphung</h3>
-                  </div>
-                  <ImageIcon className="w-10 h-10 text-rose-500 opacity-80" />
-                </button>
-
-                <button
+                <motion.button
+                  variants={itemVariants}
                   onClick={startQuiz}
                   className="group relative overflow-hidden bg-olive text-white p-8 rounded-[32px] shadow-sm flex items-center justify-between transition-all hover:shadow-md active:scale-95"
                 >
@@ -199,7 +224,7 @@ export default function App() {
                     <h3 className="text-2xl font-serif font-bold">Na theihmi hneksak</h3>
                   </div>
                   <ChevronRight className="w-10 h-10 opacity-80" />
-                </button>
+                </motion.button>
               </div>
             </motion.div>
           )}
@@ -207,22 +232,24 @@ export default function App() {
           {screen === 'LEARN' && (
             <motion.div
               key="learn"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="space-y-6"
             >
-              <div className="flex items-center gap-4">
+              <motion.div variants={itemVariants} className="flex items-center gap-4">
                 <button onClick={() => setScreen('HOME')} className="p-2 rounded-full bg-white shadow-sm">
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <h2 className="text-2xl font-serif font-bold">Cawnnak</h2>
-              </div>
+              </motion.div>
 
               <div className="grid grid-cols-1 gap-4">
                 {Object.keys(EDUCATIONAL_DATA).map((key) => (
-                  <button
+                  <motion.button
                     key={key}
+                    variants={itemVariants}
                     onClick={() => navigateToCategory(key)}
                     className="bg-white p-6 rounded-[24px] shadow-sm border border-black/5 flex items-center gap-6 transition-all hover:bg-black/[0.02]"
                   >
@@ -233,7 +260,7 @@ export default function App() {
                       <h3 className="text-lg font-serif font-bold">{EDUCATIONAL_DATA[key].title}</h3>
                       <p className="text-sm text-black/50">Cawn awk tampi a um</p>
                     </div>
-                  </button>
+                  </motion.button>
                 ))}
               </div>
             </motion.div>
@@ -242,19 +269,20 @@ export default function App() {
           {screen === 'CATEGORY_DETAIL' && selectedCategoryKey && (
             <motion.div
               key="category"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="space-y-8"
             >
-              <div className="flex items-center gap-4">
+              <motion.div variants={itemVariants} className="flex items-center gap-4">
                 <button onClick={() => setScreen('LEARN')} className="p-2 rounded-full bg-white shadow-sm">
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <h2 className="text-xl font-serif font-bold">{EDUCATIONAL_DATA[selectedCategoryKey].title}</h2>
-              </div>
+              </motion.div>
 
-              <div className="bg-white p-6 rounded-[32px] shadow-sm border border-black/5 space-y-6">
+              <motion.div variants={itemVariants} className="bg-white p-6 rounded-[32px] shadow-sm border border-black/5 space-y-6">
                 <div className="flex justify-center">
                   <div className="p-6 rounded-full bg-black/[0.03]">
                     {EDUCATIONAL_DATA[selectedCategoryKey].icon}
@@ -264,9 +292,7 @@ export default function App() {
                   {EDUCATIONAL_DATA[selectedCategoryKey].entries.map((entry, i) => (
                     <motion.div 
                       key={i}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: i * 0.05 }}
+                      variants={itemVariants}
                       className="p-4 rounded-xl bg-black/[0.02] space-y-2 relative group"
                     >
                       <div className="flex justify-between items-start">
@@ -289,45 +315,45 @@ export default function App() {
                     </motion.div>
                   ))}
                 </div>
-              </div>
+              </motion.div>
 
-              <button
+              <motion.button
+                variants={itemVariants}
                 onClick={() => setScreen('LEARN')}
                 className="w-full py-4 bg-olive text-white rounded-2xl font-bold shadow-sm"
               >
                 Kirnak
-              </button>
+              </motion.button>
             </motion.div>
           )}
 
           {screen === 'FAVORITES' && (
             <motion.div
               key="favorites"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="space-y-6"
             >
-              <div className="flex items-center gap-4">
+              <motion.div variants={itemVariants} className="flex items-center gap-4">
                 <button onClick={() => setScreen('HOME')} className="p-2 rounded-full bg-white shadow-sm">
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <h2 className="text-2xl font-serif font-bold">I Khonmi (Favorites)</h2>
-              </div>
+              </motion.div>
 
               {favorites.length === 0 ? (
-                <div className="text-center py-12 space-y-4">
+                <motion.div variants={itemVariants} className="text-center py-12 space-y-4">
                   <Bookmark className="w-16 h-16 text-black/10 mx-auto" />
                   <p className="text-black/40 font-medium">Na duhmi thil pakhat hmanh na khon rih lo.</p>
-                </div>
+                </motion.div>
               ) : (
                 <div className="space-y-4">
                   {favorites.map((fav, i) => (
                     <motion.div 
                       key={`${fav.categoryKey}-${fav.entryIndex}`}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.05 }}
+                      variants={itemVariants}
                       className="bg-white p-6 rounded-[24px] shadow-sm border border-black/5 space-y-3 relative"
                     >
                       <div className="flex justify-between items-start">
@@ -358,71 +384,30 @@ export default function App() {
             </motion.div>
           )}
 
-          {screen === 'GALLERY' && (
-            <motion.div
-              key="gallery"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              className="space-y-6"
-            >
-              <div className="flex items-center gap-4">
-                <button onClick={() => setScreen('HOME')} className="p-2 rounded-full bg-white shadow-sm">
-                  <ChevronLeft className="w-6 h-6" />
-                </button>
-                <h2 className="text-2xl font-serif font-bold">Hmanthlak Gallery</h2>
-              </div>
-
-              <div className="grid grid-cols-1 gap-6">
-                {GALLERY_DATA.map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
-                    className="bg-white rounded-[32px] overflow-hidden shadow-sm border border-black/5"
-                  >
-                    <div className="aspect-[4/3] relative">
-                      <img 
-                        src={item.imageUrl} 
-                        alt={item.title}
-                        className="w-full h-full object-cover"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                    <div className="p-6 space-y-2">
-                      <h3 className="text-xl font-serif font-bold text-olive">{item.title}</h3>
-                      <p className="text-sm text-black/70 leading-relaxed">{item.description}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-
           {screen === 'QUIZ' && (
             <motion.div
               key="quiz"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               className="space-y-8"
             >
               {!showResult ? (
                 <>
-                  <div className="flex items-center justify-between">
+                  <motion.div variants={itemVariants} className="flex items-center justify-between">
                     <button onClick={() => setScreen('HOME')} className="p-2 rounded-full bg-white shadow-sm">
                       <ChevronLeft className="w-6 h-6" />
                     </button>
                     <div className="text-sm font-bold text-olive uppercase tracking-widest">
                       {quizIndex + 1} / {activeQuizQuestions.length}
                     </div>
-                  </div>
+                  </motion.div>
 
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-serif font-bold text-center leading-tight">
+                    <motion.h3 variants={itemVariants} className="text-2xl font-serif font-bold text-center leading-tight">
                       {activeQuizQuestions[quizIndex].question}
-                    </h3>
+                    </motion.h3>
 
                     <div className="space-y-3">
                       {activeQuizQuestions[quizIndex].options.map((option, i) => {
@@ -446,8 +431,9 @@ export default function App() {
                         }
 
                         return (
-                          <button
+                          <motion.button
                             key={i}
+                            variants={itemVariants}
                             disabled={selectedOption !== null}
                             onClick={() => handleQuizAnswer(i)}
                             className={`w-full p-5 rounded-2xl border-2 text-left text-lg font-medium transition-all ${bgColor} ${borderColor} ${textColor} flex items-center justify-between`}
@@ -463,15 +449,14 @@ export default function App() {
                                 <XCircle className="w-6 h-6 text-red-500" />
                               </motion.div>
                             )}
-                          </button>
+                          </motion.button>
                         );
                       })}
                     </div>
 
                     {selectedOption !== null && (
                       <motion.div 
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        variants={itemVariants}
                         className={`text-center p-3 rounded-xl font-bold ${
                           selectedOption === activeQuizQuestions[quizIndex].answer 
                             ? 'text-green-600 bg-green-50' 
@@ -485,8 +470,7 @@ export default function App() {
 
                   {selectedOption !== null && (
                     <motion.button
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
+                      variants={itemVariants}
                       onClick={nextQuestion}
                       className="w-full py-4 bg-olive text-white rounded-2xl font-bold flex items-center justify-center gap-2"
                     >
@@ -497,28 +481,30 @@ export default function App() {
                 </>
               ) : (
                 <div className="text-center space-y-8 py-8">
-                  <div className="space-y-4">
+                  <motion.div variants={itemVariants} className="space-y-4">
                     <div className="inline-block p-6 rounded-full bg-white shadow-sm">
                       <CheckCircle2 className="w-16 h-16 text-olive" />
                     </div>
                     <h2 className="text-3xl font-serif font-bold">Hneksaknak tlamtling!</h2>
                     <p className="text-xl text-black/60">Na hmuhmi score: {score} / {activeQuizQuestions.length}</p>
-                  </div>
+                  </motion.div>
 
                   <div className="space-y-3">
-                    <button
+                    <motion.button
+                      variants={itemVariants}
                       onClick={startQuiz}
                       className="w-full py-4 bg-olive text-white rounded-2xl font-bold flex items-center justify-center gap-2"
                     >
                       <RotateCcw className="w-5 h-5" />
                       Tuah tthan
-                    </button>
-                    <button
+                    </motion.button>
+                    <motion.button
+                      variants={itemVariants}
                       onClick={() => setScreen('HOME')}
                       className="w-full py-4 bg-white text-black border border-black/10 rounded-2xl font-bold"
                     >
                       Innkung ah kir
-                    </button>
+                    </motion.button>
                   </div>
                 </div>
               )}
